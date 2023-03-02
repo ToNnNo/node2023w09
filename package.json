@@ -1,0 +1,40 @@
+{
+  "name": "formationnode",
+  "version": "1.0.0",
+  "description": "Projet vu en Formation NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preserver": "echo \"Debut de la commande start server\"",
+    "server": "PORT=5000 nodemon server -e js,html",
+    "postserver": "echo \"Server démarré\"",
+    "express": "nodemon express -e js,twig",
+    "api": "nodemon api/index.ts",
+    "typeorm:sync": "typeorm-ts-node-commonjs schema:sync -d ./API/data-source.ts"
+  },
+  "author": "ToNo",
+  "license": "MIT",
+  "dependencies": {
+    "class-validator": "^0.14.0",
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "esm": "^3.2.25",
+    "express": "^4.18.2",
+    "helmet": "^6.0.1",
+    "jsonwebtoken": "^9.0.0",
+    "lodash": "^4.17.21",
+    "mime-types": "^2.1.35",
+    "reflect-metadata": "^0.1.13",
+    "sqlite3": "^5.1.4",
+    "ts-node": "^10.9.1",
+    "twig": "^1.16.0",
+    "typeorm": "^0.3.12",
+    "typescript": "^4.9.5"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
+    "@types/node": "^18.14.2",
+    "nodemon": "^2.0.20"
+  }
+}

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1>App Express + Twig JS</h1>
+    </header>
+    <nav>
+        <a href="/welcome" target="_blank">Welcome</a> -
+        <a href="/twig">Twig</a> -
+        <a href="/user/1">User</a> -
+        <a href="/form">Formulaire</a> -
+    </nav>
+    <section>
+        {# commentaire #}
+        {% block body %}{% endblock %}
+    </section>
+    <footer>
+        <p><small> Formation NodeJS - Février/Mars 2023 - Dawan FOAD </small></p>
+    </footer>
+</body>
+</html>

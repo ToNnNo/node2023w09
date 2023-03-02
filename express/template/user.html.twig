@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Utilisateur{% endblock %}
+
+{% block body %}
+    <h1>Hello User</h1>
+
+    <dl>
+        <dt>ID</dt>
+        <dd>{{ user.id }}</dd>
+        <dt>Name</dt>
+        <dd>{{ user.name }}</dd>
+    </dl>
+{% endblock %}
